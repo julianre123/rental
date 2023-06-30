@@ -1,0 +1,217 @@
+.product {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.product__container > h1 {
+  font-size: 44px;
+  line-height: 1.25em;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.product__images {
+  display: grid;
+  margin-bottom: 32px;
+  gap: 8px;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.product__images > img {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+  max-width: 100%;
+  display: inline-block;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+.product__images > img:hover {
+  filter: brightness(115%);
+}
+
+.product__images__small {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+.product__images__small__container {
+  display: grid;
+  height: 100%;
+  grid-auto-columns: 1fr;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.product__images__small__container > img {
+  max-width: 100%;
+  display: inline-block;
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+.product__images__small__container > img:nth-of-type(1):hover {
+  filter: brightness(115%);
+}
+.product__images__small__container > img:nth-of-type(2):hover {
+  filter: brightness(115%);
+}
+.product__images__small__container > img:nth-of-type(3):hover {
+  filter: brightness(115%);
+}
+.product__images__small__container > img:nth-of-type(4):hover {
+  filter: brightness(115%);
+}
+.carousel__container {
+  position: relative;
+}
+.bg {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  opacity: 0.8;
+  width: 100%;
+}
+.carousel {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.product__info__text {
+  max-width: 750px;
+}
+.product__info__guests {
+  display: flex;
+  gap: 16px;
+}
+.product__info__guests__text {
+  padding: 24px 32px 22px;
+  background-color: #d4e9ee;
+  color: #25535d;
+  text-align: start;
+  max-width: 350px;
+  width: 100%;
+}
+.product__info__guests__text > p {
+  font-size: 24px;
+  line-height: 1.3em;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.product__info__text__text {
+  width: 95%;
+}
+
+.product__info__text__text > h3 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 26px;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+.product__info__text__text > p {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.product__info__sticky {
+  max-width: 430px;
+  width: 100%;
+}
+.product__info__reserve {
+  position: sticky;
+  top: 110px;
+  border: 1px solid #d3dadb;
+  padding: 15px 32px 16px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+
+.product__info__reserve > h3 {
+  color: #25535d;
+  font-size: 24px;
+  line-height: 1.3em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.product__info__reserve > h4 {
+  max-width: 350px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.product__info__form {
+  display: flex;
+  flex-direction: column;
+  min-height: 20px;
+  min-width: 50px;
+  align-items: stretch;
+  border: 1px solid transparent;
+}
+
+.product__info__form > label {
+  display: block;
+  margin-bottom: 6px;
+  color: #303037;
+  font-size: 15px;
+  font-weight: 400;
+}
+.product__info__form > input {
+  height: 44px;
+  min-width: 120px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e6eced;
+  border-radius: 0px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+.product__info__reserve > button {
+  height: 44px;
+  padding: 8px 28px;
+  flex: 0 0 auto;
+  border: 1px solid #25535d;
+  border-radius: 100px;
+  background-color: #25535d;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 370px;
+  width: 100%;
+  margin-top: 20px;
+}
+.product__info__reserve > button:hover {
+  background-color: #103c46;
+}
+.icon {
+  z-index: 150;
+  fill: #fff;
+  position: absolute;
+  top: -400px;
+  right: 20%;
+  cursor: pointer;
+}

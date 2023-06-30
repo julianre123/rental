@@ -1,0 +1,17 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  background-color: #f0f4f5;
+  width: 100%;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}

@@ -1,0 +1,137 @@
+.find {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.find__container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1330px;
+  min-height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.box__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #25535d;
+  border-bottom: 1px solid #25535d;
+}
+
+.box__wrapper::before,
+.box__wrapper::after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.box__wrapper::after {
+  clear: both;
+}
+
+.find__container__text {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  background-color: #25535d;
+  color: #f0f4f5;
+  text-align: center;
+  padding: 80px 40px;
+}
+.find__container__text > img {
+  margin-bottom: 24px;
+  max-width: 100%;
+  display: inline-block;
+}
+.find__container__text__text {
+  max-width: 500px;
+}
+.find__container__text__text > h1 {
+  font-size: 44px;
+  margin-bottom: 16px;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+.find__container__text__text > p {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.find__container__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+.find__container__btns > a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find__container__btns > a:nth-of-type(1) {
+  height: 44px;
+  margin-bottom: 16px;
+
+  flex: 0 0 auto;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 100px;
+  color: #303037;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 230px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 30px;
+}
+.find__container__btns > a:nth-of-type(1) > span {
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.find__container__btns > a:nth-of-type(1):hover span {
+  margin-left: 10px;
+}
+.find__container__btns > a:nth-of-type(1):hover {
+  width: 240px;
+}
+
+.find__container__btns > a:nth-of-type(2) {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  margin-top: -15px;
+}
+
+.find__container__btns > a:nth-of-type(2) span {
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.find__container__btns > a:nth-of-type(2):hover span {
+  margin-left: 10px;
+}

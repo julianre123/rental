@@ -1,0 +1,94 @@
+.banner {
+  margin-top: 80px;
+  padding-bottom: 120px;
+  background-color: #303037;
+  background-image: linear-gradient(180deg, #25535d, rgba(37, 83, 93, 0)),
+    url(https://assets.website-files.com/640803295a68024620fa6dd9/64092f2ff0c862e88e86e1e8_jonathan-mueller-pjx4RQbxnhw-unsplash.webp);
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner__content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  width: 100%;
+}
+.text__box > h1 {
+  margin-top: -4px;
+  margin-bottom: 24px;
+  font-size: 64px;
+  line-height: 1.1em;
+  font-weight: 400;
+}
+.text__box {
+  max-width: 650px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.text__box > p {
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-bottom: 24px;
+}
+.text__box > a:nth-of-type(1) {
+  height: 44px;
+  margin-bottom: 16px;
+
+  flex: 0 0 auto;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 100px;
+  color: #303037;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 230px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text__box > a:nth-of-type(1) > span {
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.text__box > a:nth-of-type(1):hover span {
+  margin-left: 10px;
+}
+.text__box > a:nth-of-type(1):hover {
+  width: 240px;
+}
+
+.text__box > a:nth-of-type(2) {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.text__box > a:nth-of-type(2) span {
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.text__box > a:nth-of-type(2):hover span {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+}

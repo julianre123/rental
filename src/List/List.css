@@ -1,0 +1,130 @@
+.list__content {
+  background-color: #25535d;
+}
+
+.list__flex {
+  display: flex;
+
+  width: 100%;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+.list__flex__left {
+  color: #fff;
+  max-width: 450px;
+  width: 100%;
+}
+
+.list__flex__left > h1 {
+  font-size: 44px;
+  margin-bottom: 16px;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+.list__flex__left > p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+.list__flex__left > ul {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  list-style-type: none;
+  padding-left: 0;
+}
+.list__flex__left > ul > li {
+  margin-bottom: 12px;
+  padding-left: 26px;
+  background-image: url(https://assets.website-files.com/640803295a68024620fa6dd9/64261384e8a48fa808b84690_Simple%20Light%20Green%20Tick.svg);
+  background-position: 0px 4px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  font-size: 17px;
+  line-height: 1.4em;
+}
+.list__flex__right {
+  width: 47%;
+  margin-bottom: 0px;
+  padding: 46px;
+  background-color: #fff;
+  color: #303037;
+}
+.list__flex__right > p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  line-height: 1.5em;
+  font-weight: 400;
+  max-width: 350px;
+}
+.right__form {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.right__form__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.right__form__input > label {
+  margin-bottom: 6px;
+  color: #303037;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.right__form__input > input,
+.right__form__input > select,
+.right__form__input > textarea {
+  height: 44px;
+  min-width: 120px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e6eced;
+  border-radius: 0px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.4em;
+  width: 100%;
+  transition: border 0.3s ease;
+}
+.right__form__input > textarea {
+  height: auto;
+}
+.right__form__input > input:focus,
+.right__form__input > select:focus,
+.right__form__input > textarea:focus {
+  border: 1px solid #25535d;
+  outline: none;
+}
+
+.list__flex__right > button {
+  height: 44px;
+  padding: 8px 28px;
+  flex: 0 0 auto;
+  border: 1px solid #25535d;
+  border-radius: 100px;
+  background-color: #25535d;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+.list__flex__right > button:hover {
+  background-color: #103c46;
+}
+@media screen and (max-width: 1231px) {
+  .list__flex__left {
+    max-width: 100%;
+  }
+  .list__flex__right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
